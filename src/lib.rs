@@ -60,8 +60,6 @@ pub fn pg_query_parse(input: &str) -> PgQueryParseResult {
     unsafe {
         let result = ffi::pg_query_parse(c_input.as_ptr());
 
-        println!("{:?}", result);
-
         let query_error = if !result.error.is_null() {
 
             let ref error = *(result.error);

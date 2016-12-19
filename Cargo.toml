@@ -1,6 +1,8 @@
 [package]
-name = "libpg_query"
+name = "pg_query_parser"
 version = "0.1.0"
 authors = ["Alberto Leal <mailforalberto@gmail.com>"]
+
+build = "build.rs"
 
 [dependencies]
